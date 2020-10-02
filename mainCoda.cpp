@@ -21,8 +21,11 @@ int main()
 			case 1:
 			{
 				int nuovo = rand()%100 + 1;
-				inserisci(miaCoda,nuovo);
-				cout<<"Inserito in coda: "<<nuovo<<endl;
+				int ris = inserisci(miaCoda,nuovo);
+				if (ris==0)
+					cout<<"Inserito in coda: "<<nuovo<<endl;
+				else
+					cout<<"Coda piena!"<<endl;
 				break;
 			}
 			case 2:

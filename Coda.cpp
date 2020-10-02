@@ -3,13 +3,19 @@
 
 using namespace std;
 
-void inserisci(coda &c, int e)
+int inserisci(coda &c, int e)
 /*
  * Inserisce in coda l'elemento e
  * Implementare anche il controllo di coda piena.
+ * restituisce 0 se l'inserimento è avvenuto
+ * restituisce -1 se non è stato possibile inserire il nuovo 
+ * elemento
  */
 {
+	int temp = -1
+	//Di seguito il codice
 	
+	return temp;
 }
 
 int estrai(coda &c)
@@ -19,6 +25,8 @@ int estrai(coda &c)
  */
 {
 	int temp = 0;
+	//Di seguito il codice
+	
 	return temp;
 }
 

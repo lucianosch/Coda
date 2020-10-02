@@ -6,5 +6,5 @@ struct coda{
 };
 
 void stampa (coda);
-void inserisci(coda &, int);
+int inserisci(coda &, int);
 int estrai(coda &);
