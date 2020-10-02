@@ -12,7 +12,7 @@ int inserisci(coda &c, int e)
  * elemento
  */
 {
-	int temp = -1
+	int temp = -1;
 	//Di seguito il codice
 	
 	return temp;
