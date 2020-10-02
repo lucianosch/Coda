@@ -10,7 +10,8 @@ int main()
 {
 	int scelta;
 	coda miaCoda;
-	
+	miaCoda.testa = 0;
+	miaCoda.fine = 0;
 	srand(time(NULL));
 	do
 	{
