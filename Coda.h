@@ -1,16 +1,10 @@
-struct elemento {
-	int info;
-	elemento * succ;
-};
+const int N = 5; //Posizioni disponibili in coda
 struct coda{
-	int nelem;
-	elemento * primo;
-	elemento * ultimo;
+	int c[N];
+	int testa; //puntatore al primo elemento della coda
+	int fine; //puntatore alla prima posizione libera in coda
 };
 
 void stampa (coda);
-elemento * creaNuovo();
-coda inserisci(coda, elemento *);
-elemento * estrai(coda &);
-bool vuota(coda);
-int somma(coda);
+void inserisci(coda &, int);
+int estrai(coda &);

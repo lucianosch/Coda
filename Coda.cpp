@@ -1,72 +1,33 @@
 #include <iostream>
-#include <ctime>
-#include <cstdlib>
 #include "Coda.h"
 
 using namespace std;
 
-elemento * creaNuovo()
+void inserisci(coda &c, int e)
+/*
+ * Inserisce in coda l'elemento e
+ * Implementare anche il controllo di coda piena.
+ */
 {
-	elemento * nuovo = new(elemento);
-	//Valorizzo il campo info
-	nuovo->info = rand()%90+1;
-	nuovo->succ=NULL;
-	return nuovo;
+	
 }
 
-coda inserisci(coda c, elemento * e)
+int estrai(coda &c)
+/*
+ * Estrae e restituisce il primo elemento in coda
+ * Restituisce 0 se la coda è vuota
+ */
 {
-	
-	if (c.primo==NULL)
-		c.primo = e;
-	else
-		c.ultimo->succ = e;
-	c.ultimo = e;
-	c.nelem++;
-	
-	return c;
-}
-
-elemento * estrai(coda &c)
-{
-	elemento * temp = 0;
-	if (!vuota(c))
-	{
-	
-		temp = c.primo;
-		if (c.primo==c.ultimo)
-			c.primo = c.ultimo = NULL;
-		else
-			c.primo = temp->succ;
-		c.nelem>0?c.nelem--:c.nelem=0;
-	
-	}
+	int temp = 0;
 	return temp;
 }
 
 void stampa (coda c)
+/*
+ * Stampa tutti gli elementi presenti in coda oppure 
+ * un messaggio di coda vuota nel caso in cui non ci
+ * siano elementi in coda.
+ */
 {
-	cout<<"La coda contiene: "<<c.nelem<<" elementi"<<endl;
-	elemento * temp = c.primo;
-	while (temp!=NULL)
-	{
-		cout.width(3);
-		cout<<temp->info;
-		temp = temp->succ;
-	}
-	cout<<endl;
-}
-bool vuota (coda c)
-{
-	return c.nelem==0;
-}
-int somma(coda c)
-{
-	int s = 0;
-	while (c.primo !=0)
-	{
-		s += c.primo->info;
-		c.primo = c.primo->succ;
-	}
-	return s;
+	
 }
