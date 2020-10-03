@@ -8,3 +8,4 @@ struct coda{
 void stampa (coda);
 int inserisci(coda &, int);
 int estrai(coda &);
+void scorri(coda &);

@@ -39,3 +39,12 @@ void stampa (coda c)
 {
 	
 }
+
+void scorri(coda &c)
+/*
+ * Scorre gli elementi dell'array per 
+ * liberare posti in coda
+ */
+{
+	
+}
