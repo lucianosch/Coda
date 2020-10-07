@@ -3,6 +3,10 @@
 
 using namespace std;
 
+void inizializzaCoda(coda &c){
+	c.testa = 0;
+	c.fine = 0;
+}
 int inserisci(coda &c, int e)
 /*
  * Inserisce in coda l'elemento e

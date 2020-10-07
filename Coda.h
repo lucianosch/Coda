@@ -5,6 +5,7 @@ struct coda{
 	int fine; //puntatore alla prima posizione libera in coda
 };
 
+void inizializzaCoda(coda &);
 void stampa (coda);
 int inserisci(coda &, int);
 int estrai(coda &);
